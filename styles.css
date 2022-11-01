@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0 !important;
+}
+
+#body {
+    background-color: #000000;
+}
+
 #homeImage {
     position: fixed;
     object-fit: cover;
@@ -15,12 +27,12 @@
     z-index: -1;
 }
 
-main img {
+.homeSection img {
     height: 50px;
     transition: all .3s ease;
 }
 
-main h4 {
+.homeSection h4 {
     color: #ffffff;
     font-size: 1.25rem;
     font-weight: 400;
@@ -28,7 +40,7 @@ main h4 {
     margin: 0.75rem;
 }
 
-main p {
+.homeSection p {
     color: #FFBC77;
     font-size: 1rem;
     text-align: center;
@@ -36,12 +48,12 @@ main p {
 }
 
 @media screen and (max-width: 767px) {
-    main img {
+    .homeSection img {
         height: 30px;
     }
 }
 
-main {
+.homeSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +66,7 @@ main {
 }
 
 .arrow-button {
+    text-decoration: none;
     display: flex;
     color: #ffffff;
     background-color: #FC5901;
@@ -105,4 +118,60 @@ main {
 .arrow-button:hover {
     background-color: #ffffff;
     color: #FC5901;
+}
+
+/* Event page */
+
+#homeLink {
+    color: #ffffff
+}
+
+.eventSection {
+    padding: 5rem;
+    display: grid;
+}
+
+#carouselFade {
+    /* max-height: 100px; */
+}
+
+ #eventTitle {
+    height: 50px;
+    transition: all .3s ease;
+    margin-top: 4rem;
+}
+
+.eventSection h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 2rem 0 1rem 0;
+}
+
+.eventSection h4 {
+    color: #FFBC77;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.eventSection p {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.itemInformation {
+    margin-right: 3rem;
+}
+
+.feed{
+    border-radius: 2rem;
+    height: 350px;
+    justify-content: center;
+    object-fit: cover;
+    width: 100%;
 }
