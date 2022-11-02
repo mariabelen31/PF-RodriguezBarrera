@@ -19,13 +19,16 @@
     <title>Halloween Party | Event</title>
   </head>
   <body id="body">
-    <nav class="navbar fixed-top" style="background-color: #000000">
-      <div class="container">
-        <a id="homeLink" class="navbar-brand" href="../index.html">Home</a>
-      </div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb" id="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="../index.html" id="homeLink">Home</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Event</li>
+      </ol>
     </nav>
     <main class="eventSection">
-      <img src="../img/image1.jpeg" class="feed" alt="..." />
+      <img src="../img/banner.jpg" class="banner" alt="..." />
       <div>
         <img
           src="../img/HalloweenParty.png"
@@ -42,6 +45,25 @@
             <div class="itemInformation">
               <h4>Location</h4>
               <p>Hotel Radison, Montevideo, Uruguay</p>
+            </div>
+          </div>
+        </div>
+        <div class="tickets">
+          <h3>Tickets</h3>
+          <div class="wrapper">
+            <div class="itemInformation prices">
+              <h4>VIP</h4>
+              <p>from US$ 30</p>
+              <button type="button" class="btn btn-secondary" disabled>
+                Sold Out
+              </button>
+            </div>
+            <div class="itemInformation prices">
+              <h4>Access</h4>
+              <p>from US$ 10</p>
+              <a class="arrow-button" href="../index.html"
+                >Buy Tickets<span class="arrow"></span
+              ></a>
             </div>
           </div>
         </div>
