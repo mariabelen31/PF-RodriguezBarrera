@@ -44,6 +44,11 @@ a {
 .bioSection img {
     border-radius: $m;
     width: 200px;
+    transition: ease 0.3s;
+}
+
+.bioSection img:hover{
+    transform: scale(1.05);
 }
 
 .bioSection p {
@@ -128,6 +133,11 @@ a {
 .infoSection .platformsSection img {
     height: $xl;
     margin: $xs $xs $xs 0;
+    transition: ease 0.3s;
+}
+
+.infoSection .platformsSection img:hover {
+    transform: translateY(-5px);
 }
 
 @media screen and (min-width: $desktop_screen) {
@@ -146,8 +156,8 @@ a {
     .eventsSection {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0 $m; 
-        padding: $l; 
+        grid-gap: 0 $m;
+        padding: $l;
     }
 
     .eventsSection ul {
@@ -156,7 +166,7 @@ a {
 }
 
 .eventsSection ul div {
-    margin: $l 0; 
+    margin: $l 0;
 }
 
 //music
@@ -168,9 +178,9 @@ a {
 @media screen and (min-width: $desktop_screen) {
     .musicSection {
         grid-template-columns: repeat(8, 1fr);
-        grid-gap: 0 $xl; 
-        padding: $l 0; 
-        grid-row-gap: $l; 
+        grid-gap: 0 $xl;
+        padding: $l 0;
+        grid-row-gap: $l;
     }
 
     .musicSection iframe {
@@ -185,9 +195,9 @@ a {
 @media screen and (max-width: $mobile_screen) {
     .musicSection {
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0 $xl; 
-        padding: $l; 
-        grid-row-gap: $l; 
+        grid-gap: 0 $xl;
+        padding: $l;
+        grid-row-gap: $l;
     }
 
     .musicSection iframe {
@@ -213,9 +223,9 @@ a {
 @media screen and (min-width: $desktop_screen) {
     .videosSection {
         grid-template-columns: repeat(8, 1fr);
-        grid-gap: 0 $xl; 
-        padding: $l 0; 
-        grid-row-gap: $l; 
+        grid-gap: 0 $xl;
+        padding: $l 0;
+        grid-row-gap: $l;
         grid-template-rows: repeat(10, 1fr);
     }
 
@@ -232,9 +242,9 @@ a {
 @media screen and (max-width: $mobile_screen) {
     .videosSection {
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0 $xl; 
-        padding: $l; 
-        grid-row-gap: $l; 
+        grid-gap: 0 $xl;
+        padding: $l;
+        grid-row-gap: $l;
         grid-template-rows: repeat(6, 1fr);
     }
 
@@ -310,6 +320,13 @@ form .input {
     border-radius: $xs;
     border: solid $blue $border;
     min-width: 10rem;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.button:hover {
+    background-color: $purple;
+    border: solid $purple $border;
 }
 
 //photos
@@ -325,6 +342,10 @@ form .input {
     height: 100%;
     min-height: 150px;
     min-width: 150px;
+    transition: ease 0.3s; 
+}
+.photosSection img:hover {
+    transform: scale(1.05);
 }
 
 @media screen and (min-width: $mobile_screen) {
@@ -381,10 +402,16 @@ form .input {
     margin-left: $m;
     font-size: 0.8rem;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.buttonSecondary:hover {
+    color: $purple;
 }
 
 .wrapper {
     display: flex;
     align-items: center;
-    font-weight: $font_weight_bold; 
+    font-weight: $font_weight_bold;
 }
