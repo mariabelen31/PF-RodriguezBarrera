@@ -1,0 +1,14 @@
+@import "variables/variables";
+
+footer {
+    background-color: $sky_blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+}
+
+footer img {
+    height: 2rem;
+    margin: 0.5rem; //change
+}

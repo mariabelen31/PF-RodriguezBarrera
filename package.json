@@ -1,10 +1,11 @@
 {
   "name": "coderhouse2022",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""   
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/mariabelen31/coderhouse2022/issues"
   },
-  "homepage": "https://github.com/mariabelen31/coderhouse2022#readme"
+  "homepage": "https://github.com/mariabelen31/coderhouse2022#readme",
+  "description": "",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
 }

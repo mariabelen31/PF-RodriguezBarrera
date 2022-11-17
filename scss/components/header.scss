@@ -1,0 +1,35 @@
+@import "variables/variables";
+
+header {
+    background-color: $purple;
+}
+
+.navigationBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 4.3rem;
+}
+
+.navigationItem {
+    display: inline-block;
+    padding: 0.8rem;
+}
+
+.navigationItem a {
+    color: $white;
+    font-weight: $font_weight_bold;
+}
+
+@media screen and (min-width: $desktop_screen) {
+    .navigationItem a {
+        font-size: $font_size_base;
+    }
+}
+
+@media screen and (max-width: $mobile_screen) {
+    .navigationItem a {
+        font-size: 0.9rem; //change it
+    }
+}
